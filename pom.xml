@@ -32,14 +32,29 @@
             <version>${javafx.version}</version>
         </dependency>
 
-        <!-- Hibernate & JPA (Acceso a Datos) -->
+        <!-- Hibernate & JPA (ORM Core) -->
         <dependency>
             <groupId>org.hibernate.orm</groupId>
             <artifactId>hibernate-core</artifactId>
             <version>${hibernate.version}</version>
         </dependency>
 
-        <!-- Driver PostgreSQL -->
+        <!-- Adaptador de Hibernate para HikariCP (Pool de Conexiones) -->
+        <dependency>
+            <groupId>org.hibernate.orm</groupId>
+            <artifactId>hibernate-hikaricp</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
+
+        <!-- Driver H2 Database (Embebido local) -->
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>2.2.224</version>
+            <scope>runtime</scope>
+        </dependency>
+
+        <!-- Driver PostgreSQL (Conservado para producción / entorno Docker del TFG) -->
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
