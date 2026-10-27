@@ -1,7 +1,7 @@
 -- =====================================================================
--- BACKDOOR OVERRIDE - Esquema PostgreSQL v2 (demo dias 1-5)
+-- BACKDOOR - Esquema PostgreSQL v2 (demo dias 1-5)
 -- Uso: psql -U postgres -c "CREATE DATABASE backdoor;"
---      psql -U postgres -d backdoor_override -f backdoor_override_schema.sql
+--      psql -U postgres -d backdoor -f 01_init_schema.sql
 -- =====================================================================
 
 DROP SCHEMA IF EXISTS juego CASCADE;
